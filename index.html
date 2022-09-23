@@ -14,12 +14,19 @@
 </head>
 <body>
 	<ul class="nav-desktop">
+		<li><span></span><a href="">Invisalign</a></li>
+		<li><span></span><a href="">Benefícios</a></li>
+		<li><span></span><a href="">Serve para mim?</a></li>
+		<li><span></span><a href="">Contato</a></li>
+	</ul>
+
+	<section class="header-master">
+		<ul class="nav-desktop">
 			<li><span></span><a href="https://www.invisalign.com.br/" target="_blank">Invisalign</a></li>
 			<li><span></span><a href="#beneficios">Benefícios</a></li>
 			<li><span></span><a href="#serve">Serve para mim?</a></li>
 			<li><span></span><a href="#contato">Contato</a></li>
-	</ul>
-	<section class="header-master">
+		</ul>
 		<header>
 			<div class="container">
 				<div class="logo"></div><!--logo-->
@@ -32,6 +39,7 @@
 					</ul>
 				</nav>
 				<nav class="mobile">
+					
 					<h3><i class="fa fa-bars"></i></h3>
 				</nav>
 				<div class="telefone-header">
@@ -91,7 +99,7 @@
 			</div><!--diferencial-single-->
 			<div class="diferencial-single">
 				<img src="images/icones/icone01.png" />
-				<h2>Não atrapalha para <b>falar ou cantar :)</b></h2>
+				<h2>Não atrapalha para <b>falar ou cantar :</b></h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed consequat tortor. Praesent sodales lacinia ipsum.</p>
 			</div><!--diferencial-single-->
 			<div class="diferencial-single">
@@ -111,8 +119,7 @@
 			<div class="sobre-container padsobre">
 				<h2>O futuro chegou, e ele é transparente!</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed consequat tortor. Praesent sodales lacinia ipsum. Praesent sodales lacinia ipsum.</p>
-				<h2>Conheça o procedimento
-com a <b>Dra. Leda Monguilhott</b></h2>
+				<h2>Conheça o procedimento com a <b>Dra. Leda Monguilhott</b></h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed consequat tortor. Praesent sodales lacinia ipsum. Praesent sodales lacinia ipsum.</p>
 			</div>
 			<div class="clear"></div>
@@ -291,21 +298,18 @@ com a <b>Dra. Leda Monguilhott</b></h2>
 
 	<footer>
 		<div class="container">
-			<img src="images/logo.png" />
-		
+			<img src="images/logo.png" />		
 		</div>
 
 		<div class="creator">
 			<a href="https://github.com/DevProCanidia" target="_blank" id="creador">Criado por DevProCanidia</a>
 			<p style="margin: 0;">Todos os direitos reservados</p>
+			<a href="#top" target="_blank" id="top"><i class="fa fa-arrow-up"></i>Voltar ao Topo da página</a>
+			
 		</div>
 		
 	</footer>
-
-	
-	<!--FALTA SCROLL COM JQUERY PARA O TOPO DA PÁGINA-->
-
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript">
     	$('nav.desktop a').hover(function(){
     		$('nav li').removeClass('selected');
@@ -314,6 +318,12 @@ com a <b>Dra. Leda Monguilhott</b></h2>
     	$('nav.mobile h3').click(function(){
     		$('ul.nav-desktop').slideToggle();
     	})
+		$("a[href='#top']").click(function() {
+		$("html, body").animate({ scrollTop: 0 }, "slow");
+		return false;
+		});
     </script>
+
+
 </body>
 </html>
